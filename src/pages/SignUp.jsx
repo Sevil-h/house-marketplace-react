@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavigationType, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -50,11 +50,11 @@ function SignUp() {
       delete formDataCopy.password;
       formDataCopy.timestamp = serverTimestamp();
 
-      await setDoc(doc(db, "users", "user.uid"), formDataCopy);
+      await setDoc(doc(db, "users", user.uid), formDataCopy);
 
       navigate("/");
     } catch (error) {
-      toast.error("Something went wrong witg registiration");
+      toast.error("Something went wrong with registiration");
     }
   };
 
