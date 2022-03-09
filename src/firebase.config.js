@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore"
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -10,10 +10,10 @@ const firebaseConfig = {
   projectId: "house-marketplace-5b75d",
   storageBucket: "house-marketplace-5b75d.appspot.com",
   messagingSenderId: "272206180",
-  appId: "1:272206180:web:c1047b5dd09ae65f451271"
+  appId: "1:272206180:web:c1047b5dd09ae65f451271",
 };
 
 // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore();
