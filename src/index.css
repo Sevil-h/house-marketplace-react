@@ -397,6 +397,7 @@ button {
 
 .categoryListings {
   padding: 0;
+  list-style: none;
 }
 
 .categoryListing {
