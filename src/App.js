@@ -10,6 +10,7 @@ import SignUp from "./pages/SignUp";
 import Navbar from "./components/Navbar";
 import PrivateRoute from "./components/PrivateRoute";
 import Category from "./pages/Category";
+import CreateListing from "./pages/CreateListing";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           </Route>
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/create-listing" element={<CreateListing />} />
         </Routes>
         <Navbar />
       </Router>
